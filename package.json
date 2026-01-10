@@ -1,0 +1,68 @@
+{
+  "name": "@naiheyoung/use",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.28.0",
+  "description": "Files used for personal development.",
+  "homepage": "https://github.com/naiheyoung/use#readme",
+  "author": "Naihe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naiheyoung/use.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./prose": "./dist/templates/prose.css"
+  },
+  "bin": {
+    "use": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "vitest",
+    "prebuild": "pnpm run format",
+    "build": "tsdown && node scripts/copy.ts",
+    "format": "prettier --write src/",
+    "prepublishOnly": "pnpm build && pnpm version patch"
+  },
+  "keywords": [
+    "pkg-lite",
+    "typescript",
+    "esm",
+    "cjs",
+    "cli",
+    "template"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.0.5",
+    "@types/prompts": "^2.4.9",
+    "cac": "^6.7.14",
+    "chalk": "^5.6.2",
+    "fs-extra": "^11.3.3",
+    "ora": "^9.0.0",
+    "prettier": "^3.7.4",
+    "prompts": "^2.4.2",
+    "tsdown": "0.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "@naiheyoung/color": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@naiheyoung/color": "^1.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@naiheyoung/color": {
+      "optional": true
+    }
+  }
+}
