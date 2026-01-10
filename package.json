@@ -51,8 +51,7 @@
     "vitest": "^4.0.16"
   },
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "dependencies": {
     "@naiheyoung/color": "^1.1.0"
