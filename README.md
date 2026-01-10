@@ -2,9 +2,9 @@
 
 > Files used for personal development.
 
-<p>`.prettier`</p>
-<p>`.gitignore`</p>
-<p>`markdown style`</p>
-<p>`...`</p>
+`.prettier`
+`.gitignore`
+`markdown style`
+`...`
 
 > `prose` does not support light theme.

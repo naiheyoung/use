@@ -22,7 +22,7 @@
     "prebuild": "pnpm run format",
     "build": "tsdown && node scripts/copy.ts",
     "format": "prettier --write src/",
-    "prepublishOnly": "pnpm build && pnpm version patch"
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [
     "pkg-lite",
