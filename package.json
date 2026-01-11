@@ -1,6 +1,6 @@
 {
   "name": "@naiheyoung/use",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@10.28.0",
   "description": "Files used for personal development.",
   "homepage": "https://github.com/naiheyoung/use#readme",
