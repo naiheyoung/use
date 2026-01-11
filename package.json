@@ -37,6 +37,12 @@
     "README.md"
   ],
   "devDependencies": {
+    "@shikijs/types": "^3.21.0",
+    "@shikijs/core": "^3.21.0",
+    "@shikijs/engine-javascript": "^3.21.0",
+    "@shikijs/langs": "^3.21.0",
+    "@shikijs/themes": "^3.21.0",
+    "@shikijs/transformers": "^3.21.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^25.0.5",
     "@types/prompts": "^2.4.9",
@@ -55,13 +61,5 @@
   },
   "dependencies": {
     "@naiheyoung/color": "^1.1.0"
-  },
-  "peerDependencies": {
-    "@naiheyoung/color": "^1.1.0"
-  },
-  "peerDependenciesMeta": {
-    "@naiheyoung/color": {
-      "optional": true
-    }
   }
 }
