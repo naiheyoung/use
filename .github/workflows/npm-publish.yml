@@ -58,8 +58,8 @@ jobs:
       - name: Git Status
         run: git status --porcelain
 
-      - run: git diff src/cli.js
-      - run: git diff --summary src/cli.js
+      - run: git diff bin/cli.js
+      - run: git diff --summary bin/cli.js
 
       - name: Publish
         run: pnpm publish --provenance --access public
