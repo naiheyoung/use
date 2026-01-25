@@ -55,11 +55,18 @@ jobs:
       - name: Build
         run: pnpm build
 
+<<<<<<< HEAD
       - name: Git Status
         run: git status --porcelain
 
       - run: git diff bin/cli.js
       - run: git diff --summary bin/cli.js
+=======
+      - name: Git Actions
+        run: |
+          git update-index --chmod=+x bin/cli.js
+          git commit -m "chore: mark cli as executable"
+>>>>>>> a44e7e8 (chore: ci)
 
       - name: Publish
         run: pnpm publish --provenance --access public
