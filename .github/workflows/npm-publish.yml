@@ -55,5 +55,8 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Git Status
+        run: git status --porcelain
+
       - name: Publish
         run: pnpm publish --provenance --access public
