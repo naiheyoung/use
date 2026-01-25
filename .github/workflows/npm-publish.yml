@@ -55,10 +55,5 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Git Actions
-        run: |
-          git update-index --chmod=+x bin/cli.js
-          git commit -m "chore: mark cli as executable"
-
       - name: Publish
-        run: pnpm publish --provenance --access public
+        run: pnpm publish --provenance --access public --no-git-checks
