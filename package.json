@@ -57,7 +57,8 @@
     "vitest": "^4.0.16"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
     "@naiheyoung/color": "^1.1.0"
